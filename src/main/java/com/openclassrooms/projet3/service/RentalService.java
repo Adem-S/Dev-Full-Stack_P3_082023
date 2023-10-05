@@ -67,6 +67,17 @@ public class RentalService {
 			Path fileNameAndPath = Paths.get(System.getProperty("user.dir") + "/src/main/resources/static/images",
 					uniqueFileName);
 
+			Path staticFolderPath = Paths.get(System.getProperty("user.dir") + "/src/main/resources/static");
+			Path imagesFolderPath = Paths.get(staticFolderPath.toString(), "images");
+
+			if (!Files.exists(staticFolderPath)) {
+				Files.createDirectory(staticFolderPath);
+			}
+
+			if (!Files.exists(imagesFolderPath)) {
+				Files.createDirectory(imagesFolderPath);
+			}
+
 			Files.write(fileNameAndPath, picture.getBytes());
 
 			Timestamp dateNow = new Timestamp(System.currentTimeMillis());

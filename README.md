@@ -21,7 +21,9 @@ Make sure you have the following software installed:
 
 ### mySQL
 
-- Log in to MySQL using the root user or a user with appropriate privileges.
+- Launch mySQL
+
+- Log in to mySQL using the root user or a user with appropriate privileges.
 
 ```
    mysql -u root -p
@@ -34,7 +36,7 @@ Make sure you have the following software installed:
    CREATE DATABASE yourdatabase;
 ```
 
-- Create a MySQL user and grant privileges to the database. Replace youruser and yourpassword with your preferred username and password.
+- Create a mySQL user and grant privileges to the database. Replace youruser and yourpassword with your preferred username and password.
 
 ```
    CREATE USER 'youruser'@'localhost' IDENTIFIED BY 'yourpassword';
@@ -49,7 +51,7 @@ Make sure you have the following software installed:
 - Clone this repository to your local machine:
 
 ```
-   git clone [https://github.com/Adem-S/Dev-Full-Stack_P3_082023](https://github.com/Adem-S/Dev-Full-Stack_P3_082023)
+   git clone https://github.com/Adem-S/Dev-Full-Stack_P3_082023.git
 ```
 
 - Build the project using Maven:
